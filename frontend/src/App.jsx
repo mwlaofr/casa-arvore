@@ -1,8 +1,21 @@
+import { Routes, Route } from 'react-router-dom'
+import Header from './components/layout/Header'
+import Footer from './components/layout/Footer'
+import Home from './pages/Home'
+import Cardapio from './pages/Cardapio'
+
+
 function App() {
     return (
-        <div className="min-h-screen bg-[#1F3D33] flex items-center justify-center">
-            <h1 className="text-[#F3EBDD] text-4xl">Casa Árvore</h1>
-        </div>
+        <>
+            <Header />
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/cardapio" element={<Cardapio />} />
+
+            </Routes>
+            <Footer />
+        </>
     )
 }
 
