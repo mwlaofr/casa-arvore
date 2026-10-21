@@ -1,5 +1,6 @@
 import treeIcon from '../assets/arvore-branca.png'
 import archPhoto from '../assets/arvore-background.png'
+import PratosShowcase from '../components/PratosShowcase'
 
 // pequeno componente pras linhas decorativas (3 traços, larguras diferentes)
 function DecorLines({ align = 'left' }) {
@@ -15,6 +16,9 @@ function DecorLines({ align = 'left' }) {
 
 function Home() {
     return (
+
+        <>
+
         <section className="relative min-h-screen bg-[#F3EBDD] flex items-center justify-center overflow-hidden">
             <div className="flex flex-col items-center gap-1 px-4 w-full">
 
@@ -25,7 +29,7 @@ function Home() {
                         <div className="h-0.5 bg-[#277B6B]" />
                     </div>
 
-                    <div className="w-60 sm:w-89 shrink-0" />
+                    <div className="w-60 sm:w-89 shrink-0" /> 
 
                     <div className="flex-1 flex flex-col gap-2">
                         <div className="h-0.5 bg-[#277B6B]" />
@@ -58,9 +62,18 @@ function Home() {
                     <div className="h-0.5 bg-[#277B6B]" />
                     <div className="h-0.5 bg-[#277B6B]" />
                     <div className="h-0.5 bg-[#277B6B]" />
+                    </div>
+
+
                 </div>
-            </div>
+
+
         </section>
+
+        <PratosShowcase />
+    </>
+
+
     )
 }
 
